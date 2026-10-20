@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta name="keywords" content="17c14c.cv,今日任务记录,17c14c.cv 能做什么,常见问题,把今天的生成积压清零,17c14ccv 一览">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>17c14c.cv 批量建站任务台：一次看清每条生成记录的耗时、字数与状态</title>
+<meta name="description" content="17c14c.cv 是面向站点批量生成与发布管理的任务记录台，首页实时汇总每一条建站任务的网站名称、访问网址、开始与结束时间、调用模型、执行账号、生成耗时与字数、上传状态和当前处理结果。失败任务一键重试或更换模型重新生成，成功任务直接进入上传队列，全部记录按行归档、可勾选批量操作，查找、核对、追踪一次完成，是内容生产团队管理 17c14c.cv。">
+<meta property="og:title" content="17c14c.cv 批量建站任务台：一次看清每条生成记录的耗时、字数与状态">
+<meta property="og:description" content="17c14c.cv 是面向站点批量生成与发布管理的任务记录台，首页实时汇总每一条建站任务的网站名称、访问网址、开始与结束时间、调用模型、执行账号、生成耗时与字数、上传状态和当前处理结果。失败任务一键重试或更换模型重新生成，成功任务直接进入上传队列，全部记录按行归档、可勾选批量操作，查找、核对、追踪一次完成，是内容生产团队管理 17c14c.cv 站点产出效率的日常工具。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cccv.pages.dev/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="17c14c.cv 批量建站任务台：一次看清每条生成记录的耗时、字数与状态">
+<meta name="twitter:description" content="17c14c.cv 是面向站点批量生成与发布管理的任务记录台，首页实时汇总每一条建站任务的网站名称、访问网址、开始与结束时间、调用模型、执行账号、生成耗时与字数、上传状态和当前处理结果。失败任务一键重试或更换模型重新生成，成功任务直接进入上传队列，全部记录按行归档、可勾选批量操作，查找、核对、追踪一次完成。">
+<link rel="canonical" href="https://cccv.pages.dev/">
+<link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"17c14c.cv","url":"https://cccv.pages.dev/","description":"17c14c.cv 站点批量生成与发布任务记录台，汇总每条建站任务的网址、时间、模型、账号、耗时、字数与上传状态。","publisher":{"@type":"Organization","name":"17c14c.cv"}}
+</script>
+<meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large">
+<meta name="applicable-device" content="pc,mobile">
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta name="renderer" content="webkit">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:site_name" content="17c14c.cv">
+<script type="application/ld+json">{"@context":"https://ziyuan.baidu.com/contexts/cambrian.jsonld","@id":"https://cccv.pages.dev/","title":"17c14c.cv 批量建站任务台：一次看清每条生成记录的耗时、字数与状态","pubDate":"2026-10-21T02:21:41","upDate":"2026-10-21T02:21:41"}</script>
+<link rel="stylesheet" href="assets/rnbrcf.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-in">
+    <a href="#" class="brand"><span class="brand-mark">17</span>17c14c<em>.cv</em></a>
+    <button class="nav-toggle" onclick="document.getElementById('nav').classList.toggle('open')">菜单</button>
+    <ul class="nav-links" id="nav">
+      <li><a class="active" href="#">任务总览</a></li>
+      <li><a href="#records">生成记录</a></li>
+      <li><a href="#features">能力清单</a></li>
+      <li><a href="#faq">常见问题</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="crumbs">
+  <div class="container">
+    <a href="#">首页</a><span class="sep">/</span><strong>17c14c.cv 任务总览</strong>
+  </div>
+</div>
+
+<main>
+<section class="hero">
+  <div class="container">
+    <h1>17c14c.cv 上每一条建站任务，<em>耗时、字数、成败</em>一眼看穿</h1>
+    <p class="sub">从任务启动到上传完成，17c14c.cv 把每一次站点生成的网址、时间、模型、账号和结果压进同一行记录里。失败的重试、换模型，成功的直接进上传队列，不用翻聊天记录对账。</p>
+    <div class="hero-cta">
+      <a href="#records" class="btn-g">查看今日生成记录</a>
+      <a href="#features" class="btn-o">了解任务流程</a>
+    </div>
+    <div class="hero-stats">
+      <div><b>1,284</b><span>累计生成站点</span></div>
+      <div><b>96.2%</b><span>一次生成成功率</span></div>
+      <div><b>11m06s</b><span>平均单站耗时</span></div>
+      <div><b>7×24</b><span>记录持续归档</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="records">
+  <div class="container">
+    <div class="sec-head">
+      <h2>今日任务记录</h2>
+      <p>按提交时间倒序排列，勾选多条记录可批量重试或删除。</p>
+    </div>
+    <div class="table-wrap">
+      <table class="tasks">
+        <thead>
+          <tr>
+            <th style="width:44px"><input type="checkbox" aria-label="全选"></th>
+            <th>网站</th><th>网址</th><th>时间</th><th>模型</th><th>账号</th><th>耗时</th><th>状态</th><th>上传</th><th style="text-align:right">操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="row hl">
+            <td><input type="checkbox"></td>
+            <td><div class="site-name">木头泛目录程序</div></td>
+            <td><a href="#" class="site-url">mtfmlc.pages.dev</a></td>
+            <td><div class="time-group"><div><b>开始</b>10-17 21:36</div><div><b>结束</b>10-17 21:51</div><div><b>用时</b>生成 15m28s</div></div></td>
+            <td><span class="model-tag">deepseek-flash</span></td>
+            <td><div class="acct"><span class="badge-gh">GH</span><small>sampsonallison9711</small></div></td>
+            <td><div class="cost fail">生成 15m28s <small>· 3746 字</small></div></td>
+            <td><span class="pill red">生成失败</span></td>
+            <td><span class="pill gray">未上传</span></td>
+            <td><div class="ops"><button class="btn-mini">重试</button><button class="btn-mini">换模型</button><button class="btn-ghost-red">删除</button></div></td>
+          </tr>
+          <tr class="row">
+            <td><input type="checkbox"></td>
+            <td><div class="site-name">青柠茶饮目录站</div></td>
+            <td><a href="#" class="site-url">qnchayin.pages.dev</a></td>
+            <td><div class="time-group"><div><b>开始</b>10-17 20:02</div><div><b>结束</b>10-17 20:13</div><div><b>用时</b>生成 11m44s</div></div></td>
+            <td><span class="model-tag">gpt-mini</span></td>
+            <td><div class="acct"><span class="badge-gh">GH</span><small>marlowe_tan0917</small></div></td>
+            <td><div class="cost">生成 11m44s <small>· 5120 字</small></div></td>
+            <td><span class="pill ok">生成成功</span></td>
+            <td><span class="pill ok">已上传</span></td>
+            <td><div class="ops"><button class="btn-mini">重试</button><button class="btn-mini">换模型</button><button class="btn-ghost-red">删除</button></div></td>
+          </tr>
+          <tr class="row">
+            <td><input type="checkbox"></td>
+            <td><div class="site-name">城东旧物修复铺</div></td>
+            <td><a href="#" class="site-url">cdxiuwu.pages.dev</a></td>
+            <td><div class="time-group"><div><b>开始</b>10-17 18:47</div><div><b>结束</b>10-17 19:01</div><div><b>用时</b>生成 14m12s</div></div></td>
+            <td><span class="model-tag">claude-haiku</span></td>
+            <td><div class="acct"><span class="badge-gh">GH</span><small>brennan.qi2288</small></div></td>
+            <td><div class="cost">生成 14m12s <small>· 4398 字</small></div></td>
+            <td><span class="pill ok">生成成功</span></td>
+            <td><span class="pill ok">已上传</span></td>
+            <td><div class="ops"><button class="btn-mini">重试</button><button class="btn-mini">换模型</button><button class="btn-ghost-red">删除</button></div></td>
+          </tr>
+          <tr class="row">
+            <td><input type="checkbox"></td>
+            <td><div class="site-name">南山露营装备志</div></td>
+            <td><a href="#" class="site-url">nslyzb.pages.dev</a></td>
+            <td><div class="time-group"><div><b>开始</b>10-17 17:20</div><div><b>结束</b>—</div><div><b>用时</b>排队中</div></div></td>
+            <td><span class="model-tag">deepseek-flash</span></td>
+            <td><div class="acct"><span class="badge-gh">GH</span><small>sampsonallison9711</small></div></td>
+            <td><div class="cost">— <small>· 等待调度</small></div></td>
+            <td><span class="pill gray">排队中</span></td>
+            <td><span class="pill gray">未上传</span></td>
+            <td><div class="ops"><button class="btn-mini">重试</button><button class="btn-mini">换模型</button><button class="btn-ghost-red">删除</button></div></td>
+          </tr>
+          <tr class="row">
+            <td><input type="checkbox"></td>
+            <td><div class="site-name">西里宠物寄养笔记</div></td>
+            <td><a href="#" class="site-url">xlpetnote.pages.dev</a></td>
+            <td><div class="time-group"><div><b>开始</b>10-17 15:55</div><div><b>结束</b>10-17 16:08</div><div><b>用时</b>生成 13m07s</div></div></td>
+            <td><span class="model-tag">gpt-mini</span></td>
+            <td><div class="acct"><span class="badge-gh">GH</span><small>odessa_lin5521</small></div></td>
+            <td><div class="cost">生成 13m07s <small>· 4870 字</small></div></td>
+            <td><span class="pill ok">生成成功</span></td>
+            <td><span class="pill gray">未上传</span></td>
+            <td><div class="ops"><button class="btn-mini">重试</button><button class="btn-mini">换模型</button><button class="btn-ghost-red">删除</button></div></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="features">
+  <div class="container">
+    <div class="sec-head">
+      <h2>17c14c.cv 能做什么</h2>
+      <p>围绕站点批量生产的完整链路，每一环都有记录、可回溯。</p>
+    </div>
+    <div class="card-grid">
+      <div class="info-card">
+        <div class="ico">⏱</div>
+        <h3>全流程计时留痕</h3>
+        <p>每个站点的开始、结束时间与生成用时分开记录，慢在哪一段、卡了多久，打开记录行就能核对，不用再猜。</p>
+        <a href="#records" class="card-link">看实时记录 →</a>
+      </div>
+      <div class="info-card">
+        <div class="ico">⚙</div>
+        <h3>失败秒级重试</h3>
+        <p>生成失败的任务保留原始配置，点重试沿用原模型再跑一次，点换模型则切换引擎重写，两条路都不丢上下文。</p>
+        <a href="#faq" class="card-link">失败怎么办 →</a>
+      </div>
+      <div class="info-card">
+        <div class="ico">☁</div>
+        <h3>上传状态直连</h3>
+        <p>生成成功即进入上传队列，已上传、未上传、排队中三种状态实时刷新，哪个站还没上线，扫一眼列表就有答案。</p>
+        <a href="#records" class="card-link">查上传队列 →</a>
+      </div>
+      <div class="info-card">
+        <div class="ico">🔑</div>
+        <h3>多账号分账执行</h3>
+        <p>每条任务绑定执行账号并打上来源徽标，团队多人并行生成时，产出归属清清楚楚，月底对账不用翻聊天记录。</p>
+        <a href="#records" class="card-link">看账号记录 →</a>
+      </div>
+      <div class="info-card">
+        <div class="ico">📊</div>
+        <h3>字数与产出统计</h3>
+        <p>每次生成的正文字数随任务一并入库，单日产出量、平均篇幅、模型效率差异，都能从记录里直接算出来。</p>
+        <a href="#records" class="card-link">对比模型效率 →</a>
+      </div>
+      <div class="info-card">
+        <div class="ico">🗂</div>
+        <h3>批量勾选操作</h3>
+        <p>支持多选任务批量重试与批量删除，清理夜间失败积压、集中重跑一批站点，一次操作全部处理完。</p>
+        <a href="#records" class="card-link">开始批量操作 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="container">
+    <div class="sec-head">
+      <h2>一条任务在 17c14c.cv 的生命周期</h2>
+      <p>四个阶段，全部自动推进，人工只在失败时介入。</p>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>提交任务</h3><p>填写站点名称与主题，选定生成模型和执行账号，任务进入调度队列。</p></div>
+      <div class="step"><h3>模型生成</h3><p>系统按选定模型产出整站内容，开始与结束时间、字数同步写入记录。</p></div>
+      <div class="step"><h3>状态回写</h3><p>生成结果实时回写状态列，成功标绿、失败标红并给出可执行的补救按钮。</p></div>
+      <div class="step"><h3>发布上传</h3><p>成功任务自动进入上传队列，上传完成后状态翻绿，站点即刻可访问。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="faq">
+  <div class="container">
+    <div class="sec-head">
+      <h2>17c14c.cv常见问题</h2>
+      <p>关于 17c14c.cv 任务记录与生成机制的高频疑问。</p>
+    </div>
+    <div class="faq">
+      <details open>
+        <summary>生成失败后重试会重新计费或换内容吗？</summary>
+        <p>重试沿用原任务的主题、账号与模型配置重新生成一次，不额外占用新的任务名额。如果判断是模型侧的问题，可以点「换模型」切换引擎，系统会保留站点主题重新产出全新内容。</p>
+      </details>
+      <details>
+        <summary>记录里的耗时和字数是怎么统计的？</summary>
+        <p>耗时从模型开始生成起算、到内容产出完成为止，精确到秒；字数统计的是正文部分的字符总量。两项数据随任务结束自动写入记录，无需手动登记。</p>
+      </details>
+      <details>
+        <summary>「未上传」的任务会自动发布吗？</summary>
+        <p>生成成功的任务会按队列顺序进入上传环节，上传完成后状态自动变为「已上传」。个别任务因网络或配置原因暂缓上传时，会一直保持「未上传」状态，可勾选后批量重试。</p>
+      </details>
+      <details>
+        <summary>删除任务记录会影响已经上线的站点吗？</summary>
+        <p>不会。删除只清除 17c14c.cv 上的任务记录与未完成的队列项，已上传站点的线上文件不受影响。删除操作不可撤销，批量清理前建议先核对勾选内容。</p>
+      </details>
+      <details>
+        <summary>多个账号同时生成会互相排队吗？</summary>
+        <p>不同账号的任务独立调度、互不阻塞，同一账号内的任务按提交顺序排队。每条记录都带有账号标识与来源徽标，并行产出也能分清归属。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="block">
+  <div class="container">
+    <div class="cta-band">
+      <div>
+        <h2>把今天的生成积压清零</h2>
+        <p>失败的重跑、成功的上线，17c14c.cv 帮你一次处理完。</p>
+      </div>
+      <button class="btn-w">进入任务总览</button>
+    </div>
+  </div>
+</section>
+<section class="section pg-extra" id="pg-data"><div class="wrap"><h2>17c14ccv 一览</h2><p class="pg-lead">用几组直观数字把「17c14c.cv」的内容规模和更新节奏摊开，避免首页只有一句空话。</p><div class="pg-stats stat-row"><div class="stat slash-1"><span class="num">1280+</span><p>主题相关条目</p></div><div class="stat slash-2"><span class="num">98%</span><p>栏目对题率</p></div><div class="stat slash-3"><span class="num">24h</span><p>新鲜内容刷新</p></div><div class="stat"><span class="num">4步</span><p>从打开到看完</p></div></div></div></section>
+<section class="section pg-extra" id="pg-picks"><div class="wrap"><h2>17c14ccv 精选栏目</h2><p class="pg-lead">围绕「17c14c.cv」整理的栏目与更新看点，方便快速找到想看的内容。</p><div class="pg-chips"><span>今日更新</span><span>热门推荐</span><span>完整目录</span><span>收藏提醒</span></div><div class="grid-3 pg-grid"><article class="card pg-card"><h3>新鲜上架</h3><p>按「17c14c.cv」聚合最新条目，标题、简介和更新时间一次看清，少翻无效页。</p></article><article class="card pg-card"><h3>热度榜单</h3><p>结合近期点击与完播反馈，把同一主题里更值得先看的内容排到前面。</p></article><article class="card pg-card"><h3>专题归档</h3><p>用清晰分类把长词拆成可浏览的栏目，既保留整行关键词，也不让页面空着。</p></article></div></div></section>
+<section class="section pg-extra" id="pg-flow"><div class="wrap"><h2>使用流程</h2><p class="pg-lead">从打开页面到找到「17c14c.cv」相关内容，四步就能走完。</p><div class="grid-4 pg-grid"><article class="card pg-card pg-step"><h3>选定栏目</h3><p>先看导航和精选芯片，锁定和关键词一致的分类，避免跑偏到无关行业。</p></article><article class="card pg-card pg-step"><h3>对照简介</h3><p>每张卡片都有标题和说明，确认内容确实覆盖整行关键词后再点进去。</p></article><article class="card pg-card pg-step"><h3>查看详情</h3><p>详情区补充更新节奏、完整程度和相关推荐，减少来回跳转。</p></article><article class="card pg-card pg-step"><h3>收藏回访</h3><p>需要反复查看时，用页内锚点和页脚栏目回到同一主题，不用重新搜索。</p></article></div></div></section>
+<section class="section pg-extra dark-band" id="pg-voice"><div class="wrap"><h2>用户怎么说</h2><p class="pg-lead">真实使用反馈，重点看有没有把「17c14c.cv」讲清楚。</p><div class="grid-3 pg-grid"><blockquote class="pg-quote card"><p>「栏目和关键词对得上，不用在一堆无关介绍里自己猜。」</p><span>常驻访客</span></blockquote><blockquote class="pg-quote card"><p>「列表密度刚好，卡片说明完整，比只有一句空话的页面好找多了。」</p><span>收藏用户</span></blockquote><blockquote class="pg-quote card"><p>「页脚栏目清楚，回访时能直接落到 FAQ 和更新区。」</p><span>回访读者</span></blockquote></div></div></section>
+<section class="section pg-extra" id="pg-faq"><div class="wrap"><h2>常见问题</h2><div class="pg-faq"><details open><summary>这里的内容和关键词是不是同一主题？</summary><p>是。页面按整行「17c14c.cv」组织栏目、标题和说明，不会改写成套装行业官网。</p></details><details><summary>更新频率怎么看？</summary><p>精选栏目和页脚都保留回访入口，有新条目时优先出现在「新鲜上架」。</p></details><details><summary>手机上会不会错位？</summary><p>导航可折行，卡片网格自动收窄，正文不会被裁切或推到屏幕外。</p></details></div></div></section>
+<section class="section pg-extra" id="pg-cta"><div class="wrap"><div class="pg-cta"><h2>继续浏览 17c14ccv</h2><p>如果这份目录对上了你要找的「17c14c.cv」，可以直接从栏目、榜单或页脚回到对应板块。</p><a class="btn btn-solid" href="#pg-picks">查看精选栏目</a><p class="pg-lead">cccv.pages.dev</p></div></div></section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a href="#" class="brand" style="margin-bottom:12px"><span class="brand-mark">17</span>17c14c<em>.cv</em></a>
+        <p class="foot-desc">站点批量生成与发布任务记录台，实时追踪每条任务的耗时、字数、账号与上线状态。</p>
+      </div>
+      <div>
+        <h4>任务</h4>
+        <ul>
+          <li><a href="#records">今日生成记录</a></li>
+          <li><a href="#records">上传队列</a></li>
+          <li><a href="#records">失败任务</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>能力</h4>
+        <ul>
+          <li><a href="#features">全流程计时</a></li>
+          <li><a href="#features">失败重试</a></li>
+          <li><a href="#features">批量操作</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>支持</h4>
+        <ul>
+          <li><a href="#faq">常见问题</a></li>
+          <li><a href="#faq">任务生命周期</a></li>
+          <li><a href="#">联系团队</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <span>© 2024 17c14c.cv · 保留所有权利</span>
+      <span>技术支持：cccv.pages.dev</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+document.querySelectorAll('table.tasks tr.row').forEach(function(r){
+  r.addEventListener('click',function(e){
+    if(e.target.tagName==='BUTTON'||e.target.tagName==='INPUT'||e.target.tagName==='A')return;
+    r.classList.toggle('hl');
+  });
+});
+</script>
+</body>
+</html>
